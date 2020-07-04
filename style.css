@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background:url(img/1.jpg);
+  background:url(./img/1.jpg);
   background-size: cover;
 }
 @media screen and (max-width:600px){
