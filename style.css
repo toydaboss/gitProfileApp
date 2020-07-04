@@ -106,6 +106,7 @@ a:hover{
     border-radius: 10px;
 }
 .result-avatar{
+    display: none;
     width: 10em;
     height: 10rem;
     border-radius: 50%;
@@ -118,7 +119,7 @@ a:hover{
 .result-text{
     width: 50vw;
     position: relative;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
     column-gap: 1.8rem;
     row-gap: 2rem;

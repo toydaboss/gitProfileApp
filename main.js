@@ -6,6 +6,7 @@ const unContainer = document.querySelector(".result-username");
 const reposContainer = document.querySelector(".result-repos");
 const urlContainer = document.querySelector(".result-url");
 const avatar = document.querySelector(".result-avatar");
+const resultText = document.querySelector(".result-text");
 
 const client_id = " Iv1.cc4d493854730f6b";
 const client_secret = "de3d550fb4228e770096c3c81d64b3161ed66f78";
@@ -27,5 +28,6 @@ const showData =()=>{
 };
 searchButton.addEventListener('click',() =>{
     showData();
-    
+   resultText.style.display = "grid" ;
+   avatar.style.display = "unset";
 });
