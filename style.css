@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: hidden;
 }
 
 html, body {
@@ -121,7 +122,11 @@ a:hover{
 }
 
 @media screen and (max-width:420px){
-    .card-main{
+  body{
+        background:url(./img/2.jpg);
+        background-size: cover; 
+    }  
+  .card-main{
         display: flex;
         flex-direction: column;
         margin-top: 2em;
