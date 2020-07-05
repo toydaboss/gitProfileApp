@@ -130,7 +130,8 @@ a:hover{
 @media screen and (max-width:420px){
   body{
         background:url(./img/2.jpg);
-        background-size: no-repeat; 
+        background-size: cover; 
+        background-repeat: no-repeat;
     }  
   .card-main{
         display: flex;
@@ -150,6 +151,7 @@ a:hover{
     body{
         background:url(./img/2.jpg);
         background-size: cover; 
+        background-repeat: no-repeat;
     }
     .card-main{
         display: flex;
