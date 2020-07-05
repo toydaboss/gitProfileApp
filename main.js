@@ -23,7 +23,7 @@ const showData =()=>{
             unContainer.innerHTML= `<b>Username:</b> <span class="result-username">Not Available</span>`;
             reposContainer.innerHTML= `<b>Repos:</b> <span class="result-repos">Not Available</span>`;
             urlContainer.innerHTML= `<b>URL:</b> <a class="result-url">Not Available</a>`;
-            avatar.src=`${res.data.avatar_url}`;
+            avatar.src="./img/3.jpg";
         }
         else{
             nameContainer.innerHTML=`<b>Name:</b> <span class="result-name">${res.data.name}</span>`;
