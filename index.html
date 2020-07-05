@@ -8,30 +8,28 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">    
-        <main class="main">
-            <h1 class="main-header">Welcome to <br> GitHub Profile Finder</h1>
-            <div class="main-subheader"> All the info you need is just a search away</div>
-                <div class="search">
-                    <input class="input" type="text" placeholder="Please enter a username...">
-                    <button class="search-button">
-                    <i class="fas fa-search"></i>
-                    </button>
-                    </div>
-                <div class="result">
-                    <div class="result-img">
-                        <img src=" " alt="" class="result-avatar git-result">
-                    </div>
-                    <div class="result-text result-bg ">
-                    <p class="git-result result-name"></p>
-                    <p class="git-result result-username"></p>
-                    <p class="git-result result-repos"></p>
-                    <p class="git-result result-url"></p>
-                    </div>
-                </div>
+    <div class="card-header">
+        <h1 class="main-header">Welcome to <br> GitHub Profile Finder</h1>
+        <div class="main-subheader"> All the info you need is just a search away</div>
+    </div>
+    <div class="card-main">
+        <div class="search">
+            <input class="input" type="text" placeholder="Please enter a username...">
+            <button class="search-button"><i class="fas fa-arrow-right"></i></button>
+            <div id="match-list"></div>
+        </div>
+        <div class="result">
+            <div class="result-img">
+                <img src=" " alt="" class="result-avatar git-result">
             </div>
-            
-        </main>
+            <div class="result-text result-bg ">
+            <p class="git-result result-name"></p>
+            <p class="git-result result-username"></p>
+            <p class="git-result result-repos"></p>
+            <p class="git-result result-url"></p>
+            </div>
+        </div>
+    </div>
     </div>
     <script src="main.js"></script>
 </body>
