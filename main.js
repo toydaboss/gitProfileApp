@@ -18,11 +18,19 @@ const fetchUsers = async(user) => {
 };
 const showData =()=>{
     fetchUsers(inputValue.value).then((res)=>{
-        nameContainer.innerHTML=`<b>Name:</b> <span class="result-name">${res.data.name}</span>`;
-        unContainer.innerHTML= `<b>Username:</b> <span class="result-username">${res.data.login}</span>`;
-        reposContainer.innerHTML= `<b>Repos:</b> <span class="result-repos">${res.data.public_repos}</span>`;
-        urlContainer.innerHTML= `<b>URL:</b> <a class="result-url">${res.data.html_url}</a>`;
-        avatar.src=`${res.data.avatar_url}`;
+         if (res.data.name===undefined){
+            nameContainer.innerHTML="<b>Name:</b> <span class=result-name>Incorrect Entry</span>";
+            unContainer.innerHTML= `<b>Username:</b> <span class="result-username">Not Available</span>`;
+            reposContainer.innerHTML= `<b>Repos:</b> <span class="result-repos">Not Available</span>`;
+            urlContainer.innerHTML= `<b>URL:</b> <a class="result-url">Not Available</a>`;
+        }
+        else{
+            nameContainer.innerHTML=`<b>Name:</b> <span class="result-name">${res.data.name}</span>`;
+            unContainer.innerHTML= `<b>Username:</b> <span class="result-username">${res.data.login}</span>`;
+            reposContainer.innerHTML= `<b>Repos:</b> <span class="result-repos">${res.data.public_repos}</span>`;
+            urlContainer.innerHTML= `<b>URL:</b> <a class="result-url">${res.data.html_url}</a>`;
+            avatar.src=`${res.data.avatar_url}`;
+        }
     });
 };
 searchButton.addEventListener('click',(e) =>{
