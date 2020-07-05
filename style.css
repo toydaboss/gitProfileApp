@@ -62,7 +62,7 @@ a:hover{
     padding: 3em;
     padding-bottom: 1em;
     padding-top: 5em;
-    gap: 1em;
+    gap: 2em;
     justify-items: center;
 }
 .search{
@@ -102,7 +102,7 @@ a:hover{
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 .result-img{
     margin-top: 1em;
