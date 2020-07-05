@@ -146,6 +146,9 @@ a:hover{
     .result{
         width: 100%;
     }
+  .result-text{
+        align-items: stretch;
+    }
 }
 @media screen and (max-width:800px){
     body{
@@ -166,5 +169,8 @@ a:hover{
         background: none;
         box-shadow: none;
         border-radius: 0;
+    }
+  .result-text{
+        align-items: stretch;
     }
 }
