@@ -96,7 +96,7 @@ a:hover{
     outline: none;
 }
 .result{
-    background-color: rgba(15, 228, 182, 0.37);
+    background-color: rgba(250, 236, 236, 0.37);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.6);
     border-radius: 1em;
     display: none;
