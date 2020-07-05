@@ -81,6 +81,9 @@ a:hover{
     border-radius: 2em;
     text-align: center;
 }
+.search input:active{
+  outline: none;
+}
 .search .search-button{
     margin: 1em;
     height: 50px;
@@ -88,6 +91,9 @@ a:hover{
     border-radius: 50%;
     background: burlywood;
     cursor: pointer;
+}
+.search .search-button:active{
+    outline: none;
 }
 .result{
     background-color: rgba(15, 228, 182, 0.37);
@@ -124,7 +130,7 @@ a:hover{
 @media screen and (max-width:420px){
   body{
         background:url(./img/2.jpg);
-        background-size: cover; 
+        background-size: no-repeat; 
     }  
   .card-main{
         display: flex;
